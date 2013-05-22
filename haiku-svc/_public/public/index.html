@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta name="description" content="Haiku REST Service">
+        <meta name="keywords" content="haiku haikus">
+        <meta name="author" content="Dave Bauman">
+        <meta http-equiv="ClearType" content="on">
+        <meta name="viewport" content="width=device-width">
+        <title>Haiku Service</title>
+        <style>
+            body {
+                font-family: "", Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        This website provides the Haiku REST api.  The following commands are available:
+
+        <pre>       
+            GET /haikus                   Get all haikus
+            GET /haikus/random            Get a random haiku
+            POST /haikus                  Create a new haiku
+
+            GET /haikus/:id               Get a single haiku by id
+            DELETE /haikus/:id            Delete a haiku
+
+            POST /haikus/:id/like         "Like" a single haiku
+
+            GET /author/:name             Get all haikus authored by :name
+        </pre>
+    </body>
+</html>
